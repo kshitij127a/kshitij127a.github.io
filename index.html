@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05060A">
+<title>Kshitij Varshney — Full-Stack Developer · Applied AI</title>
+<meta name="description" content="Kshitij Varshney — Full-Stack Developer with applied AI experience: building production web apps and evaluating frontier LLMs through prompt design and agent evaluation.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kshitij Varshney — Full-Stack Developer · Applied AI">
+<meta property="og:description" content="Full-Stack Developer building production web apps and evaluating frontier LLMs through prompt design and agent evaluation.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kshitij Varshney — Full-Stack Developer · Applied AI">
+<meta name="twitter:description" content="Full-Stack Developer building production web apps and evaluating frontier LLMs through prompt design and agent evaluation.">
+<meta name="twitter:image" content="og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0E14'/%3E%3Cpath d='M11 10L5 16l6 6' stroke='%232FE6D9' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21 10l6 6-6 6' stroke='%232FE6D9' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 8l-4 16' stroke='%236FCF97' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="styles.css">
+<meta name="google-site-verification" content="ifWqgJy-B18zd30rUgN7h83XFHIJWSbLdOF6tFx1Wqg" />
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-grid-hot" id="bgGridHot"></div>
+<div class="bg-glow" id="bgGlow"></div>
+<div class="bg-noise"></div>
+
+<div class="line-gutter"><div class="line-gutter-inner" id="lineGutter"></div></div>
+
+<nav class="tabbar">
+  <div class="tabbar-inner" id="tabbar">
+    <a class="tab active" href="#hero" data-target="hero"><span class="dot"></span>hero.tsx</a>
+    <a class="tab" href="#about" data-target="about"><span class="dot"></span>about.md</a>
+    <a class="tab" href="#experience" data-target="experience"><span class="dot"></span>experience.log</a>
+    <a class="tab" href="#projects" data-target="projects"><span class="dot"></span>projects/</a>
+    <a class="tab" href="#skills" data-target="skills"><span class="dot"></span>skills.json</a>
+    <a class="tab" href="#education" data-target="education"><span class="dot"></span>education.yml</a>
+    <a class="tab" href="#certificates" data-target="certificates"><span class="dot"></span>certs.yml</a>
+    <a class="tab" href="#contact" data-target="contact"><span class="dot"></span>contact.sh</a>
+    
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-stage">
+      <div class="hero-huge" aria-hidden="true"><span class="one">KSHITIJ</span><span class="two">VARSHNEY</span></div>
+
+      <div class="editor-stage">
+        <div class="editor">
+          <div class="editor-chrome">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="filename">hero.tsx</span>
+          </div>
+          <div class="editor-body">
+            <div class="line"><span class="no">1</span><span class="code"><span class="kw">const</span> engineer <span class="kw">=</span> {</span></div>
+            <div class="line"><span class="no">2</span><span class="code">&nbsp;&nbsp;<span class="prop">name</span>: <span class="str">"Kshitij Varshney"</span>,</span></div>
+            <div class="line"><span class="no">3</span><span class="code">&nbsp;&nbsp;<span class="prop">base</span>: <span class="str">"Delhi, India"</span>,</span></div>
+            <div class="line"><span class="no">4</span><span class="code">&nbsp;&nbsp;<span class="prop">focus</span>: [<span class="str">"full-stack"</span>, <span class="str">"LLM eval"</span>, <span class="str">"agents"</span>],</span></div>
+            <div class="line"><span class="no">5</span><span class="code">};</span></div>
+
+            <h1 class="hero-name">Kshitij Varshney</h1>
+            <div class="hero-role">$ Full-Stack Developer · Applied AI / LLM Evaluation</div>
+            <p class="hero-type" id="typeTarget"></p>
+
+            <div class="hero-links">
+              <a class="btn primary" href="#contact">Get in touch →</a>
+              <a class="btn" href="assets/Resume_kshitij_git.pdf" target="_blank" rel="noopener">⬇ Resume</a>
+              <a class="btn" href="https://github.com/kshitij127a" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/kshitij-varshney-1a95a621b/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="mailto:kshitij127a@gmail.com" id="heroEmailBtn" data-copy-email="kshitij127a@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="comment">about.md</div>
+    <p class="about-lead">Full-stack developer with applied AI experience — building production web apps, and evaluating how frontier LLMs reason on the side.</p>
+    <p class="about-body">
+      I evaluate frontier LLMs and agentic coding tools through freelance work with Outlier (Scale AI) and DataAnnotation Tech: writing prompts, grading responses across leading models, building failure-mode rubrics, and constructing golden trajectories that teach autonomous agents to reason and use tools more reliably. That sits on a full-stack foundation — MERN apps, REST APIs, production deployments — plus earlier project work in computer vision and embeddings. I studied across three continents during my degree, which is where I picked up the habit of judging systems on their own terms instead of assuming one approach is the only correct one.
+    </p>
+
+    <div class="facts">
+      <div class="fact"><div class="k">Role</div><div class="v">Full-Stack Developer · Applied AI</div></div>
+      <div class="fact"><div class="k">CGPA</div><div class="v">8.4 · B.Tech CSE</div></div>
+      <div class="fact"><div class="k">Based in</div><div class="v">Delhi, India</div></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="comment">experience.log</div>
+    <div class="graph">
+
+      <div class="node">
+        <div class="log-time">05/2026 → present</div>
+        <div class="log-title">Prompt Engineer &amp; Evaluator (Freelance)</div>
+        <div class="log-org">Outlier · Scale AI — India MWF Program</div>
+        <ul class="log-list">
+          <li>Design and evaluate prompts for multimodal and conversational LLM training, grading responses across leading models and writing rubrics with failure-mode analysis.</li>
+          <li>Build golden trajectories for autonomous agents; refine prompts for time-anchoring, domain constraints, and deterministic outcomes across health, finance, and personal-management domains.</li>
+        </ul>
+      </div>
+
+      <div class="node">
+        <div class="log-time">11/2025 → present</div>
+        <div class="log-title">AI Model Evaluator (Freelance)</div>
+        <div class="log-org">DataAnnotation Tech</div>
+        <ul class="log-list">
+          <li>Evaluate agentic coding tools — Claude Code, Codex, Gemini CLI — by designing ambiguous and deep-research prompts against real codebases, judging reasoning and multi-step tool use.</li>
+          <li>Compare hundreds of outputs on factual accuracy, contextual relevance, instruction adherence, and tone; design edge cases to test robustness under ambiguity.</li>
+        </ul>
+      </div>
+
+      <div class="node">
+        <div class="log-time">06/2024 → 08/2024</div>
+        <div class="log-title">Software Engineer Intern</div>
+        <div class="log-org">Ulavi Technologies — Singapore</div>
+        <ul class="log-list">
+          <li>Built a production WhatsApp travel-planning chatbot on GroqAI and Node.js/Express, cutting end-to-end trip generation time by ~35%.</li>
+          <li>Restructured async API request handling to reduce latency and documented 12+ endpoints in Swagger UI, easing onboarding for new backend contributors.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="comment">projects/</div>
+    <div class="bento">
+
+      <div class="pcard featured">
+        <div class="pcard-head">
+          <div class="pcard-title">BioTrace</div>
+          <div class="pcard-tag">health</div>
+        </div>
+        <p class="pcard-desc">AI-powered health identity system with role-based portals for patients and doctors — unique ID generation, OTP auth, metrics tracking, and AI-driven recommendations.</p>
+        <div class="pcard-foot">
+          <div class="pcard-stack"><span>React</span> · <span>Node.js</span> · <span>Express</span> · <span>MongoDB</span></div>
+          <a class="pcard-link" href="https://github.com/kshitij127a" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+
+      <div class="pcard b">
+        <div class="pcard-head">
+          <div class="pcard-title">Facial Emotion Recognition</div>
+          <div class="pcard-tag">CV</div>
+        </div>
+        <div class="pcard-stats">
+          <span class="pcard-stat">~35K images</span>
+          <span class="pcard-stat">&lt;80ms/frame</span>
+        </div>
+        <div class="pcard-stack"><span>Python</span> · <span>OpenCV</span> · <span>CNN</span></div>
+      </div>
+
+      <div class="pcard c">
+        <div class="pcard-head">
+          <div class="pcard-title">Misinformation Detection Tool</div>
+          <div class="pcard-tag">hackathon</div>
+        </div>
+        <p class="pcard-desc">MongoDB Gen AI Hackathon (NYC) — AI tool integrating with newsfeeds and social media to detect, summarize, and score news credibility, with Atlas Vector Search-accelerated analysis.</p>
+        <div class="pcard-stack"><span>MongoDB Atlas</span> · <span>HuggingFace</span> · <span>Nomic AI</span></div>
+      </div>
+
+      <div class="pcard d">
+        <div class="pcard-head">
+          <div class="pcard-title">Role-Based Food Discovery</div>
+          <div class="pcard-tag">MERN</div>
+        </div>
+        <p class="pcard-desc">Video-sharing platform with role-based access control and JWT auth; partner upload pipeline via Multer and ImageKit for CDN delivery.</p>
+        <div class="pcard-foot">
+          <div class="pcard-stack"><span>React</span> · <span>Node.js</span> · <span>Express</span> · <span>MongoDB</span></div>
+          <a class="pcard-link" href="https://github.com/kshitij127a" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="comment">skills.json</div>
+    <div class="skills-columns">
+      <div class="skill-block">
+        <div class="skill-key">"ai_ml"</div>
+        <div class="chips">
+          <span class="chip"><span class="chip-dot"></span>LLM Evaluation</span><span class="chip"><span class="chip-dot"></span>Prompt Engineering</span><span class="chip"><span class="chip-dot"></span>CNN</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/opencv/2FE6D9" alt="">OpenCV</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/huggingface/2FE6D9" alt="">HuggingFace</span><span class="chip"><span class="chip-dot"></span>Vector Search / Embeddings</span><span class="chip"><span class="chip-dot"></span>GroqAI</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-key">"languages"</div>
+        <div class="chips">
+          <span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/python/2FE6D9" alt="">Python</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/javascript/2FE6D9" alt="">JavaScript</span><span class="chip"><span class="chip-dot"></span>C</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/cplusplus/2FE6D9" alt="">C++</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/openjdk/2FE6D9" alt="">Java</span><span class="chip"><span class="chip-dot"></span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-key">"web"</div>
+        <div class="chips">
+          <span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/react/2FE6D9" alt="">React.js</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nodedotjs/2FE6D9" alt="">Node.js</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/express/2FE6D9" alt="">Express.js</span><span class="chip"><span class="chip-dot"></span>REST APIs</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/jsonwebtokens/2FE6D9" alt="">JWT</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/html5/2FE6D9" alt="">HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-key">"data_and_tools"</div>
+        <div class="chips">
+          <span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/mongodb/2FE6D9" alt="">MongoDB</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/postgresql/2FE6D9" alt="">PostgreSQL</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/mysql/2FE6D9" alt="">MySQL</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/git/2FE6D9" alt="">Git</span><span class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/swagger/2FE6D9" alt="">Swagger UI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="comment">education.yml</div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-title">B.Tech, Computer Science &amp; Engineering</div>
+        <div class="edu-sub">Amity University, Noida — 3 Continent Program · CGPA 8.4</div>
+      </div>
+      <div class="edu-time">2021 – 2025</div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-title">Exchange Semester</div>
+        <div class="edu-sub">Birkbeck University, London, UK</div>
+      </div>
+      <div class="edu-time">01–03/2024</div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-title">Exchange Semester</div>
+        <div class="edu-sub">Fairleigh Dickinson University, New Jersey, US</div>
+      </div>
+      <div class="edu-time">03–06/2024</div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-title">Class X &amp; XII, PCM + CS</div>
+        <div class="edu-sub">G.D. Goenka Public School, East Delhi — 86% / 89%</div>
+      </div>
+      <div class="edu-time">2019 – 2021</div>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="comment">certs.yml</div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-badge">A</div>
+        <div>
+          <div class="cert-title">Introduction to Sub Agents</div>
+          <div class="cert-issuer">Anthropic</div>
+          <div class="cert-desc">Applied understanding of agentic architectures, tool-use chaining, and multi-step reasoning in autonomous LLM systems.</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">F</div>
+        <div>
+          <div class="cert-title">Flutter &amp; Dart Fundamentals</div>
+          <div class="cert-issuer">Self-paced</div>
+          <div class="cert-desc">Built 5+ cross-platform apps covering state management, navigation, and REST API integration.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="comment">contact.sh</div>
+    <div class="terminal">
+      <div class="terminal-head">zsh — kshitij@portfolio</div>
+      <div class="terminal-body" id="contactTerminal">
+        <div><span class="prompt">$</span> <span class="cmd" id="tline1"></span></div>
+        <div class="term-out" id="tout1" style="color:var(--text-muted); margin:4px 0 16px;">Kshitij Varshney — open to full-time AI/ML roles</div>
+        <div><span class="prompt">$</span> <span class="cmd" id="tline2"></span></div>
+        <div class="term-out" id="tout2" style="color:var(--text-muted); margin-top:4px;">Delhi, India</div>
+
+        <div class="contact-links term-out" id="contactLinks">
+          <a class="btn primary" href="mailto:kshitij127a@gmail.com" id="contactEmailBtn" data-copy-email="kshitij127a@gmail.com">kshitij127a@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/kshitij-varshney-1a95a621b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/kshitij127a" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="assets/Resume_kshitij_git.pdf" target="_blank" rel="noopener">⬇ Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="commit">last updated Aug 2026</div>
+</footer>
+
+<script>
+  // Line-number gutter — populate and parallax on scroll
+  (function(){
+    const gutter = document.getElementById('lineGutter');
+    const rowH = 22;
+    const total = Math.ceil((document.body.scrollHeight + 800) / rowH);
+    const frag = document.createDocumentFragment();
+    for(let i = 1; i <= total; i++){
+      const s = document.createElement('span');
+      s.textContent = String(i).padStart(3, '0');
+      if(i % 10 === 0) s.classList.add('marker');
+      frag.appendChild(s);
+    }
+    gutter.appendChild(frag);
+
+    let ticking = false;
+    function update(){
+      const y = window.scrollY * 0.72; // parallax: gutter scrolls slower than page
+      gutter.style.transform = `translateY(${-y}px)`;
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if(!ticking){ requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  // Copy-to-clipboard on email buttons
+  document.querySelectorAll('[data-copy-email]').forEach(el => {
+    const email = el.dataset.copyEmail;
+    const original = el.innerHTML;
+    let resetTimer = null;
+
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      clearTimeout(resetTimer);
+
+      const finish = (ok) => {
+        el.textContent = ok ? '✓ Copied to clipboard' : email;
+        el.classList.toggle('copied', ok);
+        resetTimer = setTimeout(() => {
+          el.innerHTML = original;
+          el.classList.remove('copied');
+        }, 1800);
+      };
+
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(() => finish(true)).catch(() => {
+          window.location.href = 'mailto:' + email;
+        });
+      } else {
+        window.location.href = 'mailto:' + email;
+      }
+    });
+  });
+
+  // Typing hero effect
+  const target = document.getElementById('typeTarget');
+  const full = "Full-Stack Developer with applied AI experience \u2014 building production web apps and evaluating frontier LLMs through prompt design, failure-mode analysis, and agent evaluation.";
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function typeWriter(el, text, speed, onDone){
+    let i = 0;
+    el.innerHTML = '';
+    const cursor = document.createElement('span');
+    cursor.className = 'cursor';
+    function step(){
+      if(i <= text.length){
+        el.textContent = text.slice(0, i);
+        el.appendChild(cursor);
+        i++;
+        setTimeout(step, speed);
+      } else if(onDone){
+        cursor.remove();
+        onDone();
+      }
+    }
+    step();
+  }
+
+  if(reduce){
+    target.textContent = full;
+  } else {
+    typeWriter(target, full, 18);
+  }
+
+  // Typing sequence for the contact terminal, triggered when it scrolls into view
+  const tline1 = document.getElementById('tline1');
+  const tline2 = document.getElementById('tline2');
+  const tout1 = document.getElementById('tout1');
+  const tout2 = document.getElementById('tout2');
+  const contactLinks = document.getElementById('contactLinks');
+  const contactTerminal = document.getElementById('contactTerminal');
+
+  function runContactSequence(){
+    typeWriter(tline1, 'whoami', 55, () => {
+      tout1.classList.add('show');
+      setTimeout(() => {
+        typeWriter(tline2, 'cat contact.txt', 45, () => {
+          tout2.classList.add('show');
+          setTimeout(() => contactLinks.classList.add('show'), 200);
+        });
+      }, 400);
+    });
+  }
+
+  if(reduce){
+    tline1.textContent = 'whoami';
+    tline2.textContent = 'cat contact.txt';
+    tout1.classList.add('show');
+    tout2.classList.add('show');
+    contactLinks.classList.add('show');
+  } else if(contactTerminal){
+    const contactObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          runContactSequence();
+          contactObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    contactObserver.observe(contactTerminal);
+  }
+
+  // Cursor-reactive background glow
+  if(!reduce){
+    const glow = document.getElementById('bgGlow');
+    const gridHot = document.getElementById('bgGridHot');
+    let raf = null;
+    let hideTimer = null;
+
+    window.addEventListener('mousemove', (e) => {
+      if(raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const x = e.clientX + 'px';
+        const y = e.clientY + 'px';
+        glow.style.setProperty('--x', x);
+        glow.style.setProperty('--y', y);
+        gridHot.style.setProperty('--x', x);
+        gridHot.style.setProperty('--y', y);
+        glow.classList.add('active');
+        gridHot.classList.add('active');
+      });
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(() => {
+        glow.classList.remove('active');
+        gridHot.classList.remove('active');
+      }, 2500);
+    }, { passive: true });
+
+    window.addEventListener('mouseleave', () => {
+      glow.classList.remove('active');
+      gridHot.classList.remove('active');
+    });
+  }
+
+  // Scroll-reveal
+  const revealSelectors = [
+    '#about .comment', '#about .about-lead', '#about .about-body', '#about .facts',
+    '#experience .comment', '#experience .node',
+    '#projects .comment', '#projects .pcard',
+    '#skills .comment', '#skills .skill-block',
+    '#education .comment', '#education .edu-item',
+    '#certificates .comment', '#certificates .cert-card',
+    '#contact .comment', '#contact .terminal'
+  ];
+  const revealEls = [];
+  revealSelectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      el.classList.add('reveal');
+      revealEls.push(el);
+    });
+  });
+
+  [
+    ['.graph', '.node'],
+    ['.bento', '.pcard'],
+    ['.skills-columns', '.skill-block']
+  ].forEach(([parentSel, childSel]) => {
+    document.querySelectorAll(parentSel).forEach(parent => {
+      [...parent.querySelectorAll(childSel)].forEach((child, i) => {
+        child.style.transitionDelay = (i * 0.08) + 's';
+      });
+    });
+  });
+  document.querySelectorAll('#education .edu-item').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.06) + 's';
+  });
+  document.querySelectorAll('#certificates .cert-card').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.08) + 's';
+  });
+
+  if(reduce){
+    revealEls.forEach(el => el.classList.add('in-view'));
+  } else {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle('in-view', entry.isIntersecting);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+  }
+
+  const sections = document.querySelectorAll('main section');
+  const tabs = document.querySelectorAll('.tab');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const id = entry.target.getAttribute('id');
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.target === id));
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
